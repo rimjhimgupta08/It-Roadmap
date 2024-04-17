@@ -1,30 +1,54 @@
-// Login.js
-import React, { useState } from 'react';
+import React, {useState} from 'react'
+import { Link } from 'react-router-dom';
+import './Slider.css';
+import { useNavigate } from 'react-router-dom';
 
-const Login = ({ onLogin }) => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Perform authentication logic here, for simplicity, just check for username and password
-    if (username === 'user' && password === 'password') {
-      onLogin();
-    } else {
-      alert('Invalid username or password');
-    }
-  };
-
+const Login = () => {
+      const navigate = useNavigate();
+      const [input, setInput] = useState({
+            
+            email: "",
+            password: "",
+      });
+      const handlelogin = (e) =>{
+            e.preventDefault();
+            const loggeduser = JSON.parse(localStorage.getItem('user'));
+            if(input.email === loggeduser.email && input.password === loggeduser.password){
+                  localStorage.setItem('loggedin', true)
+                  navigate('/courses');
+            }else{
+                  alert("wrong email and password");
+            }
+      }
   return (
-    <div>
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        <button type="submit">Login</button>
-      </form>
+    <div className='container login-form mt-4'>
+    <div className="row">
+      <div className="col-md-6 image">
+      <img src="https://img.freepik.com/free-vector/private-data-concept-illustration_114360-5135.jpg" alt="" width="450px" />
+      </div>
+      <div className="col-md-6 input mt-5">
+            <h3>Login Form</h3>
+            <form onSubmit={handlelogin} >
+            
+            <label htmlFor="exampleInputEmail">Email-ID:-
+                  <input 
+                  name='email' value={input.email} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value, })}
+                   type="email"  placeholder='Enter your Email'/>
+            </label>
+            <label htmlFor="exampleInputPassword">Password:-
+                  <input 
+                  name='password' value={input.password} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value, })}
+                   type="password"  placeholder='Enter your Password'/>
+            </label> <br />
+            {/* <p>If you not have an account so click here <Link to="/login">SignUp</Link></p> */}
+            <button type='submit'>Login</button>
+            </form>
+      </div>
     </div>
-  );
-};
 
-export default Login;
+    </div>
+  )
+}
+
+export default Login

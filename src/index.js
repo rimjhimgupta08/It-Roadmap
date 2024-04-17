@@ -8,6 +8,8 @@ import About from './Components/About';
 import Frontend from './Components/Frontend';
 import Contact from './Components/Contact';
 import Slider from './Components/Slider';
+// import Register from './Components/Register';
+import Login from './Components/Login';
 
 
 const router = createBrowserRouter([
@@ -34,6 +36,16 @@ const router = createBrowserRouter([
       {
         path:"contact",
         element:<Contact/>
+
+      },
+      // {
+      //   path:"login",
+      //   element:<Register/>
+
+      // },
+      {
+        path:"register",
+        element:<Login/>
 
       },
       
