@@ -93,7 +93,7 @@
     /* background-color: rgb(112, 162, 255); */
   }
   footer{
-    background-color: rgb(203, 189, 189);
+    background-color: rgba(168, 94, 168, 0.803);
     /* padding: 10px; */
     margin-top: 20px;
     color: black;
@@ -139,7 +139,7 @@
     color: white;
   }
   .bottom-footer{
-    background-color: rgb(157, 133, 133);
+    background-color: rgb(170, 68, 170);
     margin-bottom: -10px;
     width: 100%;
     display: flex;
