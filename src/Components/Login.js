@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Slider.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -41,7 +41,7 @@ const Login = () => {
                   name='password' value={input.password} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value, })}
                    type="password"  placeholder='Enter your Password'/>
             </label> <br />
-            {/* <p>If you not have an account so click here <Link to="/login">SignUp</Link></p> */}
+            <p>If you not have an account so click here <Link to="/login">SignUp</Link></p>
             <button type='submit'>Login</button>
             </form>
       </div>

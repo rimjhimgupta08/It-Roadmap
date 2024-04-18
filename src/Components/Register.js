@@ -14,7 +14,7 @@ const Register = () => {
       const handlesubmit = (e) =>{
             e.preventDefault();
             localStorage.setItem('user', JSON.stringify(input));
-            navigate('/login');
+            navigate('/register');
       }
       return (
             <div className='container login-form mt-4'>
@@ -39,7 +39,7 @@ const Register = () => {
                                           name='password' value={input.password} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value, })}
                                            type="password" placeholder='Enter your Password' />
                                     </label> <br />
-                                    <p>If already have an account click here <Link to="/login">Login</Link></p>
+                                    <p>If already have an account click here <Link to="/register">Login</Link></p>
                                     <button type='submit'>SignUp</button>
                                     <button type='cleartext'>Clear</button>
                               </form>

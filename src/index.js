@@ -13,6 +13,7 @@ import Contact from './Components/Contact';
 import Slider from './Components/Slider';
 // import Register from './Components/Register';
 import Login from './Components/Login';
+import Register from './Components/Register';
 
 
 const router = createBrowserRouter([
@@ -49,6 +50,11 @@ const router = createBrowserRouter([
       {
         path:"register",
         element:<Login/>
+
+      },
+      {
+        path:"login",
+        element:<Register/>
 
       },
       
