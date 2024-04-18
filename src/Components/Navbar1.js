@@ -5,11 +5,29 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import './Slider.css';
 import './Mediaquery.css';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
 const Navbar1 = () => {
   // const userName =  JSON.parse(localStorage.getItem('user'));
+  const navigate = useNavigate();
+   
+  const loginHandle  = (e) =>{
+    e.preventDefault();
+    const loggeduser = JSON.parse(localStorage.getItem('user'));
+    if(loggeduser ===  loggeduser ){
+      alert("you need to login for access courses")
+      
+          localStorage.setItem('loggedin', true)
+          navigate('/register');
+          
+    }else{
+          // alert("wrong email and password");
+          navigate('/courses');
+    }
+}
 
   return (
       
@@ -27,7 +45,7 @@ const Navbar1 = () => {
                 <Nav className="ms-auto">
                   <Nav.Link as = {Link} to="/" >Home</Nav.Link>
                   <Nav.Link as = {Link} to="/about">About</Nav.Link>
-                  <Nav.Link as = {Link} to="/courses">Courses</Nav.Link>
+                  <Nav.Link as = {Link} to="/courses" onClick={loginHandle}>Courses</Nav.Link>
                   <Nav.Link as = {Link} to="/contact">Contact</Nav.Link>
 
                   <Nav.Link as = {Link} to="/register" id='login'>Login</Nav.Link>
