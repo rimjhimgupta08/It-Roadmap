@@ -41,7 +41,7 @@ const Register = () => {
                                     </label> <br />
                                     <p>If already have an account click here <Link to="/register">Login</Link></p>
                                     <button type='submit'>SignUp</button>
-                                    <button type='cleartext'>Clear</button>
+                                    {/* <button type='clear'>Clear</button> */}
                               </form>
                         </div>
                   </div>

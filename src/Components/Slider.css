@@ -79,6 +79,7 @@
   .futureIt{
     margin-top: 70px;
     padding: 30px 10px;
+    
     /* background-color: rgb(112, 162, 255); */
   }
   footer{
@@ -105,12 +106,27 @@
     color: white;
     border: none;
   }
+  .login-form button{
+    background-color: rgb(170, 16, 170);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+  }
   .contact input{
     width: 250px;
     margin: 10px;
   }
   .contact textarea{
     margin: 10px;
+  }
+  .contact .submit{
+    background-color: rgb(170, 16, 170);
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    color: white;
   }
   .bottom-footer{
     background-color: rgb(157, 133, 133);
@@ -122,4 +138,21 @@
     padding: 10px;
     flex-wrap: wrap;
   }
-  
+  .para{
+    background-color: rgb(170, 68, 170);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+  }
+  .footer .footer-nav{
+    line-height: 5px;
+    font-size: .9rem;
+    color: black;
+  }
+  .footer .footer-nav a{
+    color: black;
+  }
+  .footer .footer-nav a:active{
+    color: rgb(219, 89, 89);
+  }

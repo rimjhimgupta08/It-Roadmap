@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import './Slider.css';
 import { useNavigate } from 'react-router-dom';
-
+import './Mediaquery.css'
 
 const Login = () => {
       const navigate = useNavigate();

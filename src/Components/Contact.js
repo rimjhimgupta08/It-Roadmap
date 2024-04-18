@@ -1,4 +1,5 @@
 import React from 'react'
+import './Mediaquery.css';
 
 
 const Contact = () => {
@@ -28,8 +29,9 @@ const Contact = () => {
             <label htmlFor="">Message: <br />
             <textarea name="" id="" cols="30" rows="5" placeholder='Enter Your Quiry'></textarea>
             </label>
-            
-            <input type="submit"  />
+            <br />
+            <input type="submit"   className='submit'
+            />
           </form>
         </div>
       </div>

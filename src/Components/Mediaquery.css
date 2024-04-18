@@ -3,12 +3,20 @@
             width: 400px;
             text-align: center;
       }
-      
+      .contact img{
+            width: 400px;
+      }
 }
 @media screen and (max-width: 1000px) {
       .about img{
             width: 350px;
             text-align: center;
+      }
+      .login-form img{
+            width: 350px;
+      }
+      .login-form input{
+            width: 250px;
       }
       
 }
@@ -64,13 +72,32 @@
       }
       
       .navbar .collapse{
-            z-index: 2 !important;
             height: 200px;
             background-color: rgb(232, 86, 110) !important;
             overflow: hidden;
             text-align: center;
           }
-      
+          .navbar .collapse nav{
+            z-index: 2 !important;
+            overflow: hidden;
+
+
+          }
+          .futureIt img{
+            width: 350px;
+            margin-top: 40px;
+          }
+          .futureIt p{
+            font-size: .9rem;
+          }
+          .contact img{
+            width: 300px;
+            height: 400px;
+      }
+      .contact input{
+            width: 200px;
+            margin: 10px;
+          }
 }
 @media screen and (max-width:800px) {
       footer li{
@@ -97,6 +124,31 @@
       .about .text{
             text-align: center;
       }
+      .contact img{
+            width: 400px;
+            /* height: 400px; */
+      }
+      .contact input{
+            width: 250px;
+            margin: 10px;
+          }
+          .frontend h3{
+            font-size: 1.2rem;
+            background-color: rgb(231, 159, 171);
+            width: 250px;
+            padding: 20px 10px;
+            border-radius: 20px;
+            text-align: center;
+          }
+          .frontend i{
+            margin-left: 110px;
+            font-size: 1.5rem;
+            color: purple;
+          } 
+          .footer img{
+            width: 150px;
+            height: 150px;
+          }
 }
 @media screen and (max-width:560px) {
       footer {
@@ -122,6 +174,32 @@
             width: 400px;
             text-align: center;
       }
+      .contact img{
+            width: 350px;
+            /* height: 400px; */
+      }
+      .contact input{
+            width: 250px;
+            margin: 10px;
+          }
+          .login-form input{
+            width: 250px;
+      }
+      .frontend h2{
+            color: purple;
+            font-size: 1.3rem;
+          }
+          .frontend h3{
+            font-size: 1rem;
+          }
+          .frontend a{
+            background-color: purple;
+            padding: 10px;
+            font-size: .8rem;
+            text-decoration: none;
+            color: white;
+            border-radius: 20px;
+          }
 }
 @media screen and (max-width:450px) {
 
@@ -132,10 +210,28 @@
       .carousel img{
             height: 200px;
       }
+      .contact img{
+            width: 300px;
+            /* height: 400px; */
+      }
+      .footer img{
+            width: 120px;
+            height: 120px;
+          }
 }
 @media screen and (max-width:400px) {
       .about img{
             width: 330px;
             text-align: center;
+      }
+      .contact input{
+            width: 200px;
+            margin: 10px;
+          }
+          .login-form img{
+            width: 320px;
+      }
+      .login-form input{
+            width: 200px;
       }
 }
