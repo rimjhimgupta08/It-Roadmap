@@ -63,6 +63,14 @@
             font-size: 1.3rem;
       }
       
+      .navbar .collapse{
+            z-index: 2 !important;
+            height: 200px;
+            background-color: rgb(232, 86, 110) !important;
+            overflow: hidden;
+            text-align: center;
+          }
+      
 }
 @media screen and (max-width:800px) {
       footer li{

@@ -58,7 +58,6 @@ const Marque = () => {
           Web Design
         </div>
         </Marquee>
-
     </div>
   )
 }

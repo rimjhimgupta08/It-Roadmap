@@ -10,7 +10,7 @@ function Navbar () {
   
     
 
-  // const userName =  JSON.parse(localStorage.getItem('user'));
+  const userName =  JSON.parse(localStorage.getItem('user'));
 
   return (
     
@@ -18,6 +18,8 @@ function Navbar () {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container">
     <Link className="navbar-brand" to="/"><img src="./image/it.jpeg" alt="" width='80px' /> Tech Skills</Link>
+   <p className='text-center'>Welcome - {userName.name}</p>
+
 
 
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
