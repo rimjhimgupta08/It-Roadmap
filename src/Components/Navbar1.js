@@ -30,7 +30,7 @@ const Navbar1 = () => {
                   <Nav.Link as = {Link} to="/courses">Courses</Nav.Link>
                   <Nav.Link as = {Link} to="/contact">Contact</Nav.Link>
 
-                  <Nav.Link as = {Link} to="/register">Login</Nav.Link>
+                  <Nav.Link as = {Link} to="/register" id='login'>Login</Nav.Link>
 
                   
                 </Nav>
