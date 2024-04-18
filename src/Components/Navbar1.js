@@ -8,8 +8,8 @@ import './Mediaquery.css';
 
 
 
-const Navbar1 = (name) => {
-  const userName =  JSON.parse(localStorage.getItem('user'));
+const Navbar1 = () => {
+  // const userName =  JSON.parse(localStorage.getItem('user'));
 
   return (
       
@@ -18,7 +18,7 @@ const Navbar1 = (name) => {
           <Navbar expand="lg" className="bg-body-tertiary navbar">
             <Container>
               <Navbar.Brand as = {Link}  to="/"><img src="./image/it.jpeg" alt="" width='80px' /> Tech Skills</Navbar.Brand>
-   <p className='text-center'>Welcome - {userName.name}</p>
+   {/* <p className='text-center'>Welcome - </p> */}
 
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav" className='collapse'>
