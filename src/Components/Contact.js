@@ -3,8 +3,7 @@ import './Mediaquery.css';
 
 
 const Contact = () => {
-  
-  
+ 
   
   return (
     <div className="container my-5 contact">
@@ -17,20 +16,20 @@ const Contact = () => {
           <h2>Enter Details Here</h2>
           <form >
           <label htmlFor="">First Name:
-            <input type="text" placeholder='Enter Your First Name'/>
+            <input type="text" placeholder='Enter Your First Name' required />
             </label>
           <label htmlFor="">Last Name:
 
-            <input type="text" placeholder='Enter Your Last Name'/>
+            <input type="text" placeholder='Enter Your Last Name' required />
             </label>
             <label htmlFor="">Email:
-            <input type="email"  placeholder='Enter Your Email'/> 
+            <input type="email"  placeholder='Enter Your Email' required /> 
             </label><br />
             <label htmlFor="">Message: <br />
-            <textarea name="" id="" cols="30" rows="5" placeholder='Enter Your Quiry'></textarea>
+            <textarea name="" id="" cols="30" rows="5" placeholder='Enter Your Quiry' ></textarea>
             </label>
             <br />
-            <input type="submit"   className='submit'
+            <input type="submit"   className='submit' 
             />
           </form>
         </div>

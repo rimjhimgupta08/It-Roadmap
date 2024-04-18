@@ -40,7 +40,7 @@ const Footer = () => {
                   <Nav.Link as = {Link} to="/" className='active' >Home</Nav.Link>
                   <Nav.Link as = {Link} to="/about">About</Nav.Link>
                   <Nav.Link as = {Link} to="/contact">Contact</Nav.Link>
-                  <Nav.Link as = {Link} to="/courses">Courses</Nav.Link>
+                  <Nav.Link as = {Link} to="/courses" >Courses</Nav.Link>
 
                   
                 </Nav>
